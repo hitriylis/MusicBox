@@ -1,0 +1,66 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+:root {
+  --black: #08020d;
+  --white: #e0e0e0;
+  --gray-light: #cacaca;
+  --gray-dark: #3c3b3d;
+  --green: #34c176;
+  --orange: #f89202;
+  --purple: #5328a1;
+  --brown: #95390c;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--gray-light);
+
+  background-color: var(--black);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
+}
