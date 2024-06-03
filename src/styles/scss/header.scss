@@ -1,0 +1,48 @@
+.header-section {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 25px;
+  z-index: 50;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-logo {
+  width: 98px;
+  display: flex;
+
+  img {
+    height: 24px;
+    width: auto;
+  }
+}
+
+.header-link {
+  line-height: 150%;
+  color: $white;
+}
+
+.menu-list {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-link {
+  line-height: 150%;
+  color: $white-dark;
+}
+
+.header-search {
+  width: 248px;
+
+  input {
+    height: 25px;
+    width: 100%;
+    font-family: $second-family;
+    border-radius: 50px;
+    background: $gray-dark;
+  }
+}
