@@ -111,7 +111,7 @@ h6 {
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
-  color: #757575;
+  color: #e0e0e0;
   background-color: #08020d;
 }
 
@@ -336,12 +336,11 @@ h2 {
 
 .header-link {
   line-height: 150%;
-  color: #e0e0e0;
 }
 
 .menu-list {
   display: flex;
-  gap: 24px;
+  width: 313px;
 }
 
 .menu-link {
@@ -356,6 +355,31 @@ h2 {
   height: 25px;
   width: 100%;
   font-family: Arial, sans-serif;
+  color: #757575;
   border-radius: 50px;
   background: #3c3b3d;
+}
+
+@media (max-width: 415px) {
+  .header-container {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-link {
+    font-weight: 700;
+  }
+  .header-menu {
+    margin: 17px 0;
+  }
+  .menu-list {
+    flex-direction: column;
+  }
+  .menu-item {
+    font-weight: 700;
+  }
+  .header-search {
+    margin: 0;
+    width: 100%;
+  }
 }
