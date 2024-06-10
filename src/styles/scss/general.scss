@@ -6,10 +6,34 @@
 
 body {
   font-family: $font-family;
-  line-height: 1.5;
+  line-height: 100%;
   color: $white;
   background-color: $black;
 }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// .block-center {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+
+//   transform: translate(-50%, -50%);
+// }
 
 h1 {
   font-weight: bold;
@@ -23,16 +47,6 @@ h2 {
   font-size: 38px;
   line-height: 57px;
   text-transform: uppercase;
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .sr-only {
@@ -62,27 +76,40 @@ h2 {
   text-decoration: none;
 }
 
-.input-dark {
-  font-family: inherit;
-
-  background-color: $gray-dark;
-  border-radius: 25px;
-  border: none;
+.form {
+  box-sizing: border-box;
+  width: 570px;
+  margin: 0 auto;
 }
 
-.input-transparent {
-  font-family: inherit;
+.form-input {
+  input {
+    display: block;
+    box-sizing: border-box;
+    min-width: 270px;
+    height: 50px;
+    padding: 10px 20px;
 
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 3px;
-  border: 2px solid $white-dark;
+    font-weight: 700;
+    color: inherit;
+
+    border: 2px solid $white-dark;
+    border-radius: 3px;
+
+    background-color: transparent;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
 }
 
 .btn {
   display: block;
+  padding: 20px 30px;
   border: none;
+  border-radius: 5px;
   background: none;
-  cursor: pointer;
 }
 
 .btn-green {

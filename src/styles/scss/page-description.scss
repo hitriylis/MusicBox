@@ -1,0 +1,33 @@
+.description {
+  background-image: url("/src/assets/images/banners/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-title {
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.description-subtitle {
+  line-height: 150%;
+}
+
+.description-subscribe {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.form-inputs {
+  display: flex;
+}
+
+.form-button {
+  width: 100%;
+  font-family: $second-family;
+}

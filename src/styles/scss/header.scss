@@ -13,6 +13,7 @@
 .header-logo {
   width: 98px;
   display: flex;
+  flex: 0 0 auto;
 
   img {
     height: 24px;
@@ -24,6 +25,11 @@
   line-height: 150%;
 }
 
+.header-menu {
+  display: flex;
+  width: 100%;
+}
+
 .menu-list {
   display: flex;
   width: 313px;
@@ -31,17 +37,20 @@
 
 .menu-link {
   line-height: 150%;
-  color: $white-dark;
+
+  &:hover {
+    color: $white;
+  }
 }
 
-.header-search {
+.menu-search {
   width: 248px;
+  flex-shrink: 0;
 
   input {
     height: 25px;
     width: 100%;
     font-family: $second-family;
-    color: $gray-light;
 
     border-radius: 50px;
     background: $gray-dark;
@@ -60,7 +69,8 @@
   }
 
   .header-menu {
-    margin: 17px 0;
+    margin: 17px 0 0 0;
+    flex-direction: column;
   }
 
   .menu-list {
@@ -69,10 +79,11 @@
 
   .menu-item {
     font-weight: 700;
+    height: auto;
   }
 
-  .header-search {
-    margin: 0;
+  .menu-search {
+    margin-top: 18px;
     width: 100%;
   }
 }

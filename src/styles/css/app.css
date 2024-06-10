@@ -110,9 +110,25 @@ h6 {
 
 body {
   font-family: Roboto, sans-serif;
-  line-height: 1.5;
+  line-height: 100%;
   color: #e0e0e0;
   background-color: #08020d;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -127,16 +143,6 @@ h2 {
   font-size: 38px;
   line-height: 57px;
   text-transform: uppercase;
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .sr-only {
@@ -162,25 +168,34 @@ h2 {
   text-decoration: none;
 }
 
-.input-dark {
-  font-family: inherit;
-  background-color: #3c3b3d;
-  border-radius: 25px;
-  border: none;
+.form {
+  box-sizing: border-box;
+  width: 570px;
+  margin: 0 auto;
 }
 
-.input-transparent {
-  font-family: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 3px;
+.form-input input {
+  display: block;
+  box-sizing: border-box;
+  min-width: 270px;
+  height: 50px;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: inherit;
   border: 2px solid #cacaca;
+  border-radius: 3px;
+  background-color: transparent;
+}
+.form-input input::placeholder {
+  color: #e0e0e0;
 }
 
 .btn {
   display: block;
+  padding: 20px 30px;
   border: none;
+  border-radius: 5px;
   background: none;
-  cursor: pointer;
 }
 
 .btn-green {
@@ -201,50 +216,6 @@ h2 {
     text-transform: uppercase;
   }
 }
-.mt-30 {
-  margin-top: 30px;
-}
-
-.mr-16 {
-  margin-right: 16px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.ml-451 {
-  margin-left: 451px;
-}
-
-.ml-90 {
-  margin-left: 90px;
-}
-
-.pt-200 {
-  padding-top: 200px;
-}
-
-.pt-5 {
-  padding-top: 5px;
-}
-
-.pb-5 {
-  padding-bottom: 5px;
-}
-
-.pb-200 {
-  padding-bottom: 200px;
-}
-
-.pl-20 {
-  padding-left: 20px;
-}
-
-.pl-10 {
-  padding-left: 10px;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -259,6 +230,78 @@ h2 {
 
 .align-start {
   align-items: flex-start;
+}
+
+.mt-17 {
+  margin-top: 17px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-31 {
+  margin-top: 31px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mb-17 {
+  margin-bottom: 17px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.ml-451 {
+  margin-left: 451px;
+}
+
+.ml-90 {
+  margin-left: 90px;
+}
+
+.ml-90 {
+  margin-left: 90px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-20 {
+  padding-left: 20px;
 }
 
 .text-size-11 {
@@ -309,6 +352,10 @@ h2 {
   color: #cacaca;
 }
 
+.text-gray-dark {
+  color: #3c3b3d;
+}
+
 .text-orange {
   color: #f89202;
 }
@@ -328,6 +375,7 @@ h2 {
 .header-logo {
   width: 98px;
   display: flex;
+  flex: 0 0 auto;
 }
 .header-logo img {
   height: 24px;
@@ -338,6 +386,11 @@ h2 {
   line-height: 150%;
 }
 
+.header-menu {
+  display: flex;
+  width: 100%;
+}
+
 .menu-list {
   display: flex;
   width: 313px;
@@ -345,17 +398,19 @@ h2 {
 
 .menu-link {
   line-height: 150%;
-  color: #cacaca;
+}
+.menu-link:hover {
+  color: #e0e0e0;
 }
 
-.header-search {
+.menu-search {
   width: 248px;
+  flex-shrink: 0;
 }
-.header-search input {
+.menu-search input {
   height: 25px;
   width: 100%;
   font-family: Arial, sans-serif;
-  color: #757575;
   border-radius: 50px;
   background: #3c3b3d;
 }
@@ -370,16 +425,51 @@ h2 {
     font-weight: 700;
   }
   .header-menu {
-    margin: 17px 0;
+    margin: 17px 0 0 0;
+    flex-direction: column;
   }
   .menu-list {
     flex-direction: column;
   }
   .menu-item {
     font-weight: 700;
+    height: auto;
   }
-  .header-search {
-    margin: 0;
+  .menu-search {
+    margin-top: 18px;
     width: 100%;
   }
+}
+.description {
+  background-image: url("/src/assets/images/banners/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-title {
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.description-subtitle {
+  line-height: 150%;
+}
+
+.description-subscribe {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.form-inputs {
+  display: flex;
+}
+
+.form-button {
+  width: 100%;
+  font-family: Arial, sans-serif;
 }

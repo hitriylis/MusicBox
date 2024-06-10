@@ -12,23 +12,19 @@
       <header class="header-section">
         <div class="header-container container align-center">
           <div class="header-logo align-center justify-between">
-            <img
-              src="./assets/images/icons/logo.svg"
-              alt="Music Box logo"
-              class="mr-161"
-            />
+            <img src="./assets/images/icons/logo.svg" alt="Music Box logo" />
             <a
               href="#"
               class="header-link link-no-decoration text-uppercase text-size-11"
               >Music Box</a
             >
           </div>
-          <nav class="header-menu menu ml-90">
+          <nav class="header-menu menu justify-between align-center ml-90">
             <ul class="menu-list justify-between">
               <li class="menu-item">
                 <a
-                  href="#"
-                  class="menu-link link-no-decoration text-uppercase text-size-11"
+                  href="#page-description"
+                  class="menu-link link-no-decoration text-uppercase text-size-11 text-white-dark"
                 >
                   Главная
                 </a>
@@ -36,7 +32,7 @@
               <li class="menu-item">
                 <a
                   href="#"
-                  class="menu-link link-no-decoration text-uppercase text-size-11"
+                  class="menu-link link-no-decoration text-uppercase text-size-11 text-white-dark"
                 >
                   Каталог
                 </a>
@@ -44,7 +40,7 @@
               <li class="menu-item">
                 <a
                   href="#"
-                  class="menu-link link-no-decoration text-uppercase text-size-11"
+                  class="menu-link link-no-decoration text-uppercase text-size-11 text-white-dark"
                 >
                   Исполнители
                 </a>
@@ -52,24 +48,63 @@
               <li class="menu-item">
                 <a
                   href="#"
-                  class="menu-link link-no-decoration text-uppercase text-size-11"
+                  class="menu-link link-no-decoration text-uppercase text-size-11 text-white-dark"
                 >
                   Контакты
                 </a>
               </li>
             </ul>
+            <div class="menu-search">
+              <label for="search" class="sr-only">Поиск</label>
+              <input
+                id="search"
+                type="search"
+                class="input-dark text-size-13 text-white-dark text-uppercase pl-10"
+                placeholder="Поиск..."
+              />
+            </div>
           </nav>
-          <div class="header-search ml-451">
-            <label for="search" class="sr-only">Поиск</label>
-            <input
-              id="search"
-              type="search"
-              class="text-size-13 text-uppercase pl-10"
-              placeholder="Поиск..."
-            />
-          </div>
         </div>
       </header>
+
+      <main class="main-page">
+        <div class="description" id="page-description">
+          <div class="description-container container">
+            <h1 class="description-title text-uppercase text-center mt-200">
+              Онлайн музыка где угодно
+            </h1>
+            <h2 class="description-subtitle text-uppercase text-center">
+              без ограничений
+            </h2>
+            <p class="description-subscribe text-center mt-31 mb-17">
+              Получите доступ всего за несколько шагов. Заполните форму ниже и
+              откройте мир музыки
+            </p>
+
+            <form action="#" method="post" class="description-form form">
+              <div class="form-inputs justify-between">
+                <div class="form-input">
+                  <label for="name" class="sr-only">Имя</label>
+                  <input type="text" id="name" placeholder="Имя" required />
+                </div>
+                <div class="form-input">
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" id="email" placeholder="Email" required />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="form-button btn btn-green text-uppercase text-white text-center text-size-13 mt-24"
+              >
+                Получить доступ
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">footer</footer>
     </div>
   </body>
 </html>

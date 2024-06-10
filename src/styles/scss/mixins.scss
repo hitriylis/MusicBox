@@ -1,3 +1,121 @@
+// ---------- margins ----------
+$margins-top: (
+  "17": 17px,
+  "24": 24px,
+  "30": 30px,
+  "31": 31px,
+  "200": 200px,
+);
+
+@mixin mt($margins-top) {
+  @each $margin-name, $margin-value in $margins-top {
+    .mt-#{$margin-name} {
+      margin-top: $margin-value;
+    }
+  }
+}
+
+@include mt($margins-top);
+
+$margins-right: (
+  "16": 16px,
+);
+
+@mixin mr($margins-right) {
+  @each $margin-name, $margin-value in $margins-right {
+    .mr-#{$margin-name} {
+      margin-right: $margin-value;
+    }
+  }
+}
+
+@include mr($margins-right);
+
+$margins-bottom: (
+  "17": 17px,
+  "20": 20px,
+  "200": 200px,
+);
+
+@mixin mb($margins-bottom) {
+  @each $margin-name, $margin-value in $margins-bottom {
+    .mb-#{$margin-name} {
+      margin-bottom: $margin-value;
+    }
+  }
+}
+
+@include mb($margins-bottom);
+
+.ml-451 {
+  margin-left: 451px;
+}
+
+.ml-90 {
+  margin-left: 90px;
+}
+
+$margins-left: (
+  "90": 90px,
+);
+
+@mixin ml($margins-left) {
+  @each $margin-name, $margin-value in $margins-left {
+    .ml-#{$margin-name} {
+      margin-left: $margin-value;
+    }
+  }
+}
+
+@include ml($margins-left);
+
+// ---------- paddings ----------
+$paddings-top: (
+  "5": 5px,
+  "200": 200px,
+);
+
+@mixin pt($paddings-top) {
+  @each $padding-name, $padding-value in $paddings-top {
+    .pt-#{$padding-name} {
+      padding-top: $padding-value;
+    }
+  }
+}
+
+@include pt($paddings-top);
+
+$paddings-bottom: (
+  "5": 5px,
+  "200": 200px,
+);
+
+@mixin pb($paddings-bottom) {
+  @each $padding-name, $padding-value in $paddings-bottom {
+    .pb-#{$padding-name} {
+      padding-bottom: $padding-value;
+    }
+  }
+}
+
+@include pb($paddings-bottom);
+
+$paddings-left: (
+  "10": 10px,
+  "20": 20px,
+);
+
+@mixin pl($paddings-left) {
+  @each $padding-name, $padding-value in $paddings-left {
+    .pl-#{$padding-name} {
+      padding-left: $padding-value;
+    }
+  }
+}
+
+@include pl($paddings-left);
+
+// ---------- text ----------
 $sizes: (
   "size-11": 11px,
   "size-12": 12px,
@@ -24,6 +142,7 @@ $sizes: (
 $colors: (
   "white": $white,
   "white-dark": $white-dark,
+  "gray-dark": $gray-dark,
   "orange": $orange,
 );
 
