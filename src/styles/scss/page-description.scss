@@ -12,22 +12,47 @@
 .description-title {
   font-weight: 700;
   line-height: 150%;
-}
 
-.description-subtitle {
-  line-height: 150%;
+  @include media(mobile) {
+    margin-top: 248px;
+  }
 }
 
 .description-subscribe {
   font-size: 16px;
   line-height: 150%;
+
+  @include media(mobile) {
+    margin: 16px 0;
+  }
+}
+
+.description-form {
+  @include media(mobile) {
+    width: 374px;
+  }
 }
 
 .form-inputs {
   display: flex;
+  gap: 24px;
+
+  @include media(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.form-button {
-  width: 100%;
-  font-family: $second-family;
+.form-input {
+  input {
+    @include media(mobile) {
+      width: 374px;
+    }
+  }
+}
+
+.btn-green {
+  &:hover {
+    background: $green;
+  }
 }

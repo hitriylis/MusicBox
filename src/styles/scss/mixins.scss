@@ -1,3 +1,27 @@
+// ---------- media ----------
+@use "sass:map";
+
+$breakpoints: (
+  breakpoint-mobile: 425px,
+  breakpoint-small: 768px,
+  breakpoint-medium: 992px,
+  breakpoint-large: 1200px,
+);
+
+@mixin media($size: "small", $value: null) {
+  @if $size == "custom" {
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: map.get($breakpoints, breakpoint-#{$size})) {
+      @content;
+    }
+  }
+}
+
+@include media($size: "small", $value: null);
+
 // ---------- margins ----------
 $margins-top: (
   "17": 17px,
@@ -56,6 +80,7 @@ $margins-bottom: (
 }
 
 $margins-left: (
+  "451": 451px,
   "90": 90px,
 );
 

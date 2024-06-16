@@ -24,7 +24,9 @@ body {
 
 .container {
   max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
+  box-sizing: content-box;
 }
 
 // .block-center {
@@ -40,6 +42,13 @@ h1 {
   font-size: 60px;
   line-height: 90px;
   text-transform: uppercase;
+
+  @include media(mobile) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
 }
 
 h2 {
@@ -47,6 +56,13 @@ h2 {
   font-size: 38px;
   line-height: 57px;
   text-transform: uppercase;
+
+  @include media(mobile) {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
 }
 
 .sr-only {
@@ -86,7 +102,7 @@ h2 {
   input {
     display: block;
     box-sizing: border-box;
-    min-width: 270px;
+    width: 270px;
     height: 50px;
     padding: 10px 20px;
 
@@ -105,29 +121,13 @@ h2 {
 }
 
 .btn {
+  width: 100%;
   display: block;
   padding: 20px 30px;
-  border: none;
+  font-family: $second-family;
+  color: $clear-white;
+  border: 2px solid $white-dark;
   border-radius: 5px;
-  background: none;
-}
-
-.btn-green {
-  background-color: $green;
-}
-
-@media (max-width: 414px) {
-  h1 {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 45px;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    text-transform: uppercase;
-  }
+  background: transparent;
+  transition: color ease 0.5s, transform 0.5s;
 }
