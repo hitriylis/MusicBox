@@ -5,13 +5,13 @@
 }
 
 .description-container {
-  display: flex;
   flex-direction: column;
 }
 
 .description-title {
-  font-weight: 700;
-  line-height: 150%;
+  @include media(custom, 682px) {
+    margin-top: 218px;
+  }
 
   @include media(mobile) {
     margin-top: 248px;
@@ -20,7 +20,10 @@
 
 .description-subscribe {
   font-size: 16px;
-  line-height: 150%;
+
+  @include media(medium) {
+    margin: 24px 0;
+  }
 
   @include media(mobile) {
     margin: 16px 0;
@@ -28,31 +31,14 @@
 }
 
 .description-form {
-  @include media(mobile) {
-    width: 374px;
-  }
+  width: 100%;
 }
 
 .form-inputs {
-  display: flex;
   gap: 24px;
+  margin-bottom: 24px;
 
-  @include media(mobile) {
+  @include media(custom, 504px) {
     flex-direction: column;
-    align-items: center;
-  }
-}
-
-.form-input {
-  input {
-    @include media(mobile) {
-      width: 374px;
-    }
-  }
-}
-
-.btn-green {
-  &:hover {
-    background: $green;
   }
 }

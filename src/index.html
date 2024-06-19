@@ -8,10 +8,10 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex">
       <header class="header-section">
-        <div class="header-container container align-center">
-          <div class="header-logo align-center justify-between">
+        <div class="header-container container d-flex align-center">
+          <div class="header-logo d-flex align-center justify-between">
             <img src="./assets/images/icons/logo.svg" alt="Music Box logo" />
             <a
               href="#"
@@ -19,8 +19,10 @@
               >Music Box</a
             >
           </div>
-          <nav class="header-menu menu justify-between align-center ml-90">
-            <ul class="menu-list justify-between">
+          <nav
+            class="header-menu menu d-flex justify-between align-center ml-90"
+          >
+            <ul class="menu-list d-flex justify-between">
               <li class="menu-item">
                 <a
                   href="#page-description"
@@ -59,8 +61,8 @@
               <input
                 id="search"
                 type="search"
-                class="input-dark text-size-13 text-white-dark text-uppercase pl-10"
-                placeholder="Поиск..."
+                class="text-size-13 text-white-dark"
+                placeholder="ПОИСК..."
               />
             </div>
           </nav>
@@ -69,7 +71,7 @@
 
       <main class="main-page">
         <div class="description" id="page-description">
-          <div class="description-container container">
+          <div class="description-container container d-flex">
             <h1 class="description-title text-uppercase text-center mt-200">
               Онлайн музыка где угодно
             </h1>
@@ -81,8 +83,8 @@
               откройте мир музыки
             </p>
 
-            <form action="#" method="post" class="description-form form">
-              <div class="form-inputs justify-between">
+            <form action="#" method="post" class="description-form form d-flex">
+              <div class="form-inputs d-flex justify-between">
                 <div class="form-input">
                   <label for="name" class="sr-only">Имя</label>
                   <input type="text" id="name" placeholder="Имя" required />
@@ -95,16 +97,70 @@
 
               <button
                 type="submit"
-                class="form-button btn btn-green text-uppercase text-white text-center text-size-13 mt-24"
+                class="btn btn-green text-uppercase text-white text-center text-size-13"
               >
                 Получить доступ
               </button>
             </form>
           </div>
         </div>
+
+        <!-- <section class="pricing" id="page-pricing">
+          <div class="pricing-container container">
+            <h3 class="pricing-title text-center text-uppercase mb-50 pt-100">
+              Формы подписки
+            </h3>
+            <div class="pricings">
+              <div class="pricing-item bg-free">
+                <h3 class="text-center text-uppercase">Бесплатная</h3>
+                <p class="pricing-value">0 <span>руб.</span></p>
+                <button
+                  type="submit"
+                  class="btn btn-pricing text-uppercase text-center"
+                >
+                  Оформить
+                </button>
+                <p class="pricing-footer">
+                  Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей
+                  коллекции музыки. Присутствует реклама
+                </p>
+              </div>
+
+              <div class="pricing-item bg-standart">
+                <h3 class="text-center text-uppercase">Бесплатная</h3>
+                <p class="pricing-value">0 <span>руб.</span></p>
+                <button
+                  type="submit"
+                  class="btn btn-pricing text-uppercase text-center"
+                >
+                  Оформить
+                </button>
+                <p class="pricing-footer">
+                  Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей
+                  коллекции музыки. Присутствует реклама
+                </p>
+              </div>
+
+              <div class="pricing-item bg-premium">
+                <h3 class="text-center text-uppercase">Бесплатная</h3>
+                <p class="pricing-value">0 <span>руб.</span></p>
+                <button
+                  type="submit"
+                  class="btn btn-pricing text-uppercase text-center"
+                >
+                  Оформить
+                </button>
+                <p class="pricing-footer">
+                  Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей
+                  коллекции музыки. Присутствует реклама
+                </p>
+              </div>
+            </div>
+          </div>
+        </section> -->
       </main>
 
-      <footer class="footer">footer</footer>
+      <!-- <footer class="footer">footer</footer> -->
     </div>
   </body>
 </html>

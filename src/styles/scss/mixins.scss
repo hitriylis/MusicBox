@@ -2,10 +2,13 @@
 @use "sass:map";
 
 $breakpoints: (
-  breakpoint-mobile: 425px,
+  breakpoint-mobile: 426px,
   breakpoint-small: 768px,
+  // container = 720px
   breakpoint-medium: 992px,
-  breakpoint-large: 1200px,
+  // container = 960px
+  breakpoint-large: 1240px,
+  // container = 1200px
 );
 
 @mixin media($size: "small", $value: null) {
@@ -58,6 +61,7 @@ $margins-right: (
 $margins-bottom: (
   "17": 17px,
   "20": 20px,
+  "50": 50px,
   "200": 200px,
 );
 
@@ -97,6 +101,7 @@ $margins-left: (
 // ---------- paddings ----------
 $paddings-top: (
   "5": 5px,
+  "100": 100px,
   "200": 200px,
 );
 

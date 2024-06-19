@@ -6,15 +6,18 @@
 
 body {
   font-family: $font-family;
-  line-height: 100%;
+  line-height: 150%;
   color: $white;
   background-color: $black;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
 }
 
@@ -24,30 +27,91 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0 15px;
   margin: 0 auto;
-  box-sizing: content-box;
+
+  @include media(large) {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 
-// .block-center {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
+.form {
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 570px;
+  margin: 0 auto;
+}
 
-//   transform: translate(-50%, -50%);
-// }
+.form-input {
+  flex: 1 1 auto;
+  min-width: 270px;
+  min-height: 50px;
+
+  @include media(custom, 604px) {
+    min-width: 220px;
+  }
+
+  @include media(custom, 504px) {
+    width: 100%;
+    height: 50px;
+  }
+
+  input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+
+    font-weight: 700;
+    color: inherit;
+    border: 2px solid $white-dark;
+    border-radius: 3px;
+    background-color: transparent;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 57px;
+  display: block;
+  padding: 20px 30px;
+  font-family: $second-family;
+  color: $clear-white;
+  border-radius: 5px;
+  background: transparent;
+  transition: color ease 0.5s, transform 0.5s;
+}
+
+.btn-green {
+  background: $green;
+}
 
 h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 90px;
-  text-transform: uppercase;
+
+  @include media(medium) {
+    font-size: 50px;
+    line-height: 120%;
+  }
+
+  @include media(small) {
+    font-size: 40px;
+  }
+
+  @include media(custom, 682px) {
+    font-size: 32px;
+    line-height: 150%;
+  }
 
   @include media(mobile) {
-    font-weight: bold;
     font-size: 30px;
-    line-height: 150%;
-    text-transform: uppercase;
   }
 }
 
@@ -55,27 +119,32 @@ h2 {
   font-weight: bold;
   font-size: 38px;
   line-height: 57px;
-  text-transform: uppercase;
+
+  @include media(medium) {
+    font-size: 32px;
+  }
+
+  @include media(small) {
+    font-size: 26px;
+  }
+
+  @include media(custom, 682px) {
+    font-size: 22px;
+  }
 
   @include media(mobile) {
-    font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-    text-transform: uppercase;
   }
 }
 
 .sr-only {
   position: absolute;
-
   width: 1px;
   height: 1px;
   padding: 0;
-
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
 }
 
@@ -90,44 +159,4 @@ h2 {
 .link-no-decoration {
   color: inherit;
   text-decoration: none;
-}
-
-.form {
-  box-sizing: border-box;
-  width: 570px;
-  margin: 0 auto;
-}
-
-.form-input {
-  input {
-    display: block;
-    box-sizing: border-box;
-    width: 270px;
-    height: 50px;
-    padding: 10px 20px;
-
-    font-weight: 700;
-    color: inherit;
-
-    border: 2px solid $white-dark;
-    border-radius: 3px;
-
-    background-color: transparent;
-
-    &::placeholder {
-      color: $white;
-    }
-  }
-}
-
-.btn {
-  width: 100%;
-  display: block;
-  padding: 20px 30px;
-  font-family: $second-family;
-  color: $clear-white;
-  border: 2px solid $white-dark;
-  border-radius: 5px;
-  background: transparent;
-  transition: color ease 0.5s, transform 0.5s;
 }
