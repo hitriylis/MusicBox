@@ -1,7 +1,5 @@
-.description {
+.bg-description {
   background-image: url("/src/assets/images/banners/banner.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .description-container {
@@ -36,7 +34,6 @@
 
 .form-inputs {
   gap: 24px;
-  margin-bottom: 24px;
 
   @include media(custom, 504px) {
     flex-direction: column;

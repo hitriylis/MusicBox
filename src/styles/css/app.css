@@ -1,17 +1,17 @@
 @font-face {
   font-weight: 400;
   font-family: Roboto;
-  src: url("../assets/fonts/Roboto-Regular.ttf");
+  src: url("/src/assets/fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-weight: 500;
   font-family: Roboto;
-  src: url("../assets/fonts/Roboto-Medium.ttf");
+  src: url("/src/assets/fonts/Roboto-Medium.ttf");
 }
 @font-face {
   font-weight: 700;
   font-family: Roboto;
-  src: url("../assets/fonts/Roboto-Bold.ttf");
+  src: url("/src/assets/fonts/Roboto-Bold.ttf");
 }
 * {
   padding: 0;
@@ -118,6 +118,10 @@ h6 {
   margin-top: 31px;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
+
 .mt-200 {
   margin-top: 200px;
 }
@@ -134,8 +138,20 @@ h6 {
   margin-bottom: 20px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
 }
 
 .mb-200 {
@@ -227,7 +243,7 @@ h6 {
 }
 
 .text-white {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 .text-white-dark {
@@ -251,12 +267,20 @@ h6 {
 body {
   font-family: Roboto, sans-serif;
   line-height: 150%;
-  color: #e0e0e0;
+  color: #ffffff;
   background-color: #08020d;
 }
 
 .d-flex {
   display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .wrapper {
@@ -316,7 +340,7 @@ body {
   background-color: transparent;
 }
 .form-input input::placeholder {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 .btn {
@@ -324,15 +348,26 @@ body {
   height: 57px;
   display: block;
   padding: 20px 30px;
-  font-family: Arial, sans-serif;
   color: #ffffff;
+  border: 2px solid #cacaca;
   border-radius: 5px;
   background: transparent;
-  transition: color ease 0.5s, transform 0.5s;
+  transition: color ease 0.3s, transform 0.3s;
+}
+.btn:active {
+  border-color: #ffffff;
 }
 
 .btn-green {
+  font-family: Arial, sans-serif;
+}
+.btn-green:hover {
   background: #34c176;
+}
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
 }
 
 h1 {
@@ -411,6 +446,24 @@ h2 {
 .link-no-decoration {
   color: inherit;
   text-decoration: none;
+}
+
+.bg-free {
+  background-image: url("/src/assets/images/banners/bg-free.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url("/src/assets/images/banners/bg-standart.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("/src/assets/images/banners/bg-premium.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .justify-between {
@@ -516,7 +569,7 @@ h2 {
   color: #cacaca;
 }
 .menu-link:hover {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 682px) {
@@ -544,10 +597,8 @@ h2 {
   }
 }
 
-.description {
+.bg-description {
   background-image: url("/src/assets/images/banners/banner.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .description-container {
@@ -585,10 +636,93 @@ h2 {
 
 .form-inputs {
   gap: 24px;
-  margin-bottom: 24px;
 }
 @media screen and (max-width: 504px) {
   .form-inputs {
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 1240px) {
+  .pricing-container {
+    padding-top: 100px;
+  }
+}
+
+.pricing-cards {
+  gap: 50px;
+}
+@media screen and (max-width: 1025px) {
+  .pricing-cards {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .pricing-cards {
+    gap: 50px;
+  }
+}
+
+.cards-item {
+  padding: 0 24px;
+  height: 615px;
+  width: 25%;
+  min-width: 290px;
+  flex: 1 1 auto;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .cards-item h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .cards-item h3 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+.cards-item p {
+  width: 95%;
+}
+@media screen and (max-width: 1028px) {
+  .cards-item p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 822px) {
+  .cards-item p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .cards-item p {
+    width: 100%;
+  }
+}
+
+.cards-price {
+  gap: 16px;
+}
+
+.price-value {
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.price-currency {
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.pricing-btn {
+  width: 100%;
+  height: 66px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.pricing-btn:hover {
+  color: #08020d;
+  background-color: #ffffff;
 }
