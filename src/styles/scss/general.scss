@@ -11,18 +11,6 @@ body {
   background-color: $black;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.d-block {
-  display: block;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -169,12 +157,12 @@ h2 {
   border: 0;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
 }
 
 .link-no-decoration {

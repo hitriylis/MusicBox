@@ -1,0 +1,127 @@
+.news-container {
+  h2 {
+    @include media(large) {
+      padding-top: 100px;
+    }
+  }
+}
+
+.news-item {
+  gap: 50px;
+
+  @include media(custom, 860px) {
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+}
+
+.news-image {
+  width: 50%;
+  height: 100%;
+
+  @include media(custom, 1024px) {
+    width: 55%;
+  }
+
+  @include media(medium) {
+    width: 60%;
+  }
+
+  @include media(custom, 860px) {
+    width: 100%;
+  }
+}
+
+.news-content {
+  width: 50%;
+
+  @include media(custom, 1024px) {
+    width: 45%;
+  }
+
+  @include media(medium) {
+    width: 40%;
+  }
+
+  @include media(custom, 860px) {
+    width: 100%;
+  }
+}
+
+.news-body {
+  height: auto;
+
+  h3 {
+    height: 45px;
+    margin-top: 5px;
+    font-size: 30px;
+
+    @include media(custom, 1112px) {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    @include media(medium) {
+      height: auto;
+      font-size: 24px;
+    }
+
+    @include media(mobile) {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.news-author {
+  height: 19px;
+  gap: 16px;
+
+  @include media(custom, 1112px) {
+    margin-bottom: 25px;
+  }
+
+  @include media(mobile) {
+    margin-bottom: 48px;
+  }
+}
+
+.post-avatar {
+  width: 19px;
+  height: auto;
+}
+
+.post-media {
+  height: 100%;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+.post-date {
+  height: 100%;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+.news-btn {
+  width: 135px;
+  height: 53px;
+  padding: 16px 30px;
+  line-height: 160%;
+  color: $white-dark;
+  border-color: $white-dark;
+
+  &:hover {
+    color: $white;
+    border-color: $white;
+    background-color: $orange;
+  }
+
+  @include media(custom, 1112px) {
+    margin-bottom: 0;
+  }
+}
