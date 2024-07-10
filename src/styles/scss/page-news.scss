@@ -117,8 +117,6 @@
 
   &:hover {
     color: $white;
-    border-color: $white;
-    background-color: $orange;
   }
 
   @include media(custom, 1112px) {

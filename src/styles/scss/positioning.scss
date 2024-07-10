@@ -6,6 +6,11 @@
   display: block;
 }
 
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .fd-column {
   flex-direction: column;
 }
@@ -26,6 +31,10 @@
   justify-content: flex-start;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .align-center {
   align-items: center;
 }
@@ -40,4 +49,12 @@
 
 .text-center {
   text-align: center;
+}
+
+.o-1 {
+  order: 1;
+}
+
+.o-2 {
+  order: 2;
 }

@@ -27,6 +27,7 @@ $breakpoints: (
 
 // ---------- margins ----------
 $margins-top: (
+  "16": 16px,
   "17": 17px,
   "24": 24px,
   "30": 30px,
@@ -47,6 +48,7 @@ $margins-top: (
 
 $margins-right: (
   "16": 16px,
+  "123": 123px,
 );
 
 @mixin mr($margins-right) {
@@ -70,6 +72,7 @@ $margins-bottom: (
   "50": 50px,
   "64": 64px,
   "65": 65px,
+  "100": 100px,
   "200": 200px,
 );
 
@@ -83,17 +86,11 @@ $margins-bottom: (
 
 @include mb($margins-bottom);
 
-.ml-451 {
-  margin-left: 451px;
-}
-
-.ml-90 {
-  margin-left: 90px;
-}
-
 $margins-left: (
-  "451": 451px,
+  "25": 25px,
   "90": 90px,
+  "144": 144px,
+  "451": 451px,
 );
 
 @mixin ml($margins-left) {
@@ -153,6 +150,32 @@ $paddings-left: (
 
 @include pl($paddings-left);
 
+// ---------- grid ----------
+$columns: (
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "6": 6,
+  "7": 7,
+  "8": 8,
+  "9": 9,
+  "10": 10,
+  "11": 11,
+  "12": 12,
+);
+
+@mixin col($columns) {
+  @each $column-name, $column-value in $columns {
+    .col-#{$column-name} {
+      grid-column: span $column-value;
+    }
+  }
+}
+
+@include col($columns);
+
 // ---------- text ----------
 $sizes: (
   "size-11": 11px,
@@ -193,3 +216,23 @@ $colors: (
 }
 
 @include text($colors);
+
+// ---------- buttons ----------
+$colors: (
+  "green": $green,
+  "white": $white,
+  "orange": $orange,
+  "brown": $brown,
+);
+
+@mixin hover($colors) {
+  @each $color-name, $color-value in $colors {
+    .hover-#{$color-name} {
+      &:hover {
+        background-color: $color-value;
+      }
+    }
+  }
+}
+
+@include hover($colors);

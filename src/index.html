@@ -97,7 +97,7 @@
 
               <button
                 type="submit"
-                class="btn btn-green text-uppercase text-center text-size-13 mb-200"
+                class="btn hover-green btn-form text-uppercase text-center text-size-13 mb-200"
               >
                 Получить доступ
               </button>
@@ -113,9 +113,7 @@
             <div
               class="pricing-cards cards d-flex wrap justify-between mt-50 mb-40"
             >
-              <div
-                class="cards-item d-flex justify-between align-center bg-img bg-free"
-              >
+              <div class="cards-item d-flex align-center bg-img bg-free">
                 <h3
                   class="text-center text-uppercase text-size-24 mt-24 mb-200"
                 >
@@ -127,7 +125,7 @@
                 </div>
                 <a
                   href="#"
-                  class="btn pricing-btn text-size-16 text-center text-uppercase mb-64"
+                  class="btn hover-white pricing-btn text-size-16 text-center text-uppercase mb-64"
                   >Оформить</a
                 >
                 <p class="d-block text-center text-size-12 mb-64">
@@ -136,9 +134,7 @@
                 </p>
               </div>
 
-              <div
-                class="cards-item d-flex justify-between align-center bg-img bg-standart"
-              >
+              <div class="cards-item d-flex align-center bg-img bg-standart">
                 <h3
                   class="text-center text-uppercase text-size-24 mt-24 mb-200"
                 >
@@ -150,7 +146,7 @@
                 </div>
                 <a
                   href="#"
-                  class="btn pricing-btn text-size-16 text-center text-uppercase mb-64"
+                  class="btn hover-white pricing-btn text-size-16 text-center text-uppercase mb-64"
                   >Оформить</a
                 >
                 <p class="d-block text-center text-size-12 mb-64">
@@ -159,9 +155,7 @@
                 </p>
               </div>
 
-              <div
-                class="cards-item d-flex justify-between align-center bg-img bg-premium"
-              >
+              <div class="cards-item d-flex align-center bg-img bg-premium">
                 <h3
                   class="text-center text-uppercase text-size-24 mt-24 mb-200"
                 >
@@ -173,7 +167,7 @@
                 </div>
                 <a
                   href="#"
-                  class="btn pricing-btn text-size-16 text-center text-uppercase mb-64"
+                  class="btn hover-white pricing-btn text-size-16 text-center text-uppercase mb-64"
                   >Оформить</a
                 >
                 <p class="d-block text-center text-size-12 mb-64">
@@ -196,7 +190,7 @@
               Последние новости
             </h2>
             <div class="news-items d-flex fd-column">
-              <div class="news-item d-flex mb-65">
+              <article class="news-item d-flex mb-65">
                 <img
                   src="/src/assets/images/banners/eminem.png"
                   class="news-image"
@@ -209,7 +203,7 @@
                     </h3>
                     <p class="text-white-dark">
                       Новый альбом Eminem «Music to Be Murdered By» уже доступен
-                      в нашем сервисе. На альбоме вас ждёт 20 новых треков.
+                      в нашем сервисе. На альбоме вас ждёт 20 новых треков
                     </p>
                   </div>
                   <div class="news-footer">
@@ -226,14 +220,14 @@
                     </div>
                     <a
                       href="#"
-                      class="btn news-btn text-size-12 text-center text-uppercase mb-18"
+                      class="btn hover-orange news-btn text-size-12 text-center text-uppercase mb-18"
                       >К альбому</a
                     >
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="news-item d-flex row-reverse">
+              <article class="news-item d-flex row-reverse">
                 <img
                   src="/src/assets/images/banners/ozzy.png"
                   class="news-image"
@@ -261,16 +255,47 @@
                     </div>
                     <a
                       href="#"
-                      class="btn news-btn text-size-12 text-center text-uppercase mb-18"
+                      class="btn hover-orange news-btn text-size-12 text-center text-uppercase mb-18"
                       >К альбому</a
                     >
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </section>
       </main>
+
+      <section class="app" id="page-app">
+        <div class="container app-container pt-100 mb-100">
+          <h2 class="news-title text-center text-uppercase mb-48">
+            Мобильное приложение
+          </h2>
+          <div class="d-grid">
+            <div class="app-content col-6">
+              <p class="text-size-16 text-white-dark mt-16">
+                Воспользуйтесь нашим мобильным приложением. Оно позволит слушать
+                музыку с любого устройства на базе операционных систем Androind
+                и iOS.
+                <br />
+                <br />
+                С тарифом «Премиум» приложение позволяет скачивать все
+                композиции из нашей коллекции. Вы можете слушать музыку даже без
+                интернета.
+              </p>
+              <a href="#" class="btn hover-brown app-btn text-center mt-16"
+                >Скачать</a
+              >
+            </div>
+            <div class="app-image col-6 d-flex mr-123 ml-144">
+              <img
+                src="/src/assets/images/banners/iphone.png"
+                alt="Mobile phone"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- <footer class="footer">footer</footer> -->
     </div>

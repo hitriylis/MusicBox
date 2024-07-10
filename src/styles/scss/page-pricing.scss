@@ -20,7 +20,7 @@
   padding: 0 24px;
   height: 615px;
   width: 25%;
-  min-width: 290px;
+  min-width: 250px;
   flex: 1 1 auto;
   flex-direction: column;
   border-radius: 1rem;
@@ -33,22 +33,6 @@
     @include media(mobile) {
       font-weight: 700;
       font-size: 16px;
-    }
-  }
-
-  p {
-    width: 95%;
-
-    @include media(custom, 1028px) {
-      width: 100%;
-    }
-
-    @include media(custom, 822px) {
-      width: 90%;
-    }
-
-    @include media(custom, 650px) {
-      width: 100%;
     }
   }
 }
@@ -76,5 +60,9 @@
   &:hover {
     color: $black;
     background-color: $white;
+  }
+
+  &:active {
+    border-color: $gray-light;
   }
 }
