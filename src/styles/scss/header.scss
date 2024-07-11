@@ -46,7 +46,7 @@
   }
 }
 
-.menu-list {
+.header-menu-list {
   width: 313px;
 
   @include media(small) {
@@ -62,7 +62,7 @@
   }
 }
 
-.menu-item {
+.header-menu-item {
   @include media(custom, 682px) {
     font-weight: 700;
     letter-spacing: 0.1rem;
@@ -74,7 +74,7 @@
   }
 }
 
-.menu-link {
+.header-menu-link {
   line-height: 150%;
   color: $white-dark;
 
@@ -83,7 +83,7 @@
   }
 }
 
-.menu-search {
+.header-menu-search {
   @include media(custom, 682px) {
     margin-top: 18px;
     width: 100%;

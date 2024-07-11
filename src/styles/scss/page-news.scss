@@ -1,17 +1,9 @@
-.news-container {
-  h2 {
-    @include media(large) {
-      padding-top: 100px;
-    }
-  }
-}
-
 .news-item {
   gap: 50px;
 
   @include media(custom, 860px) {
     flex-direction: column;
-    margin-bottom: 64px;
+    gap: 64px;
   }
 }
 
