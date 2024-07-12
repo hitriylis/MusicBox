@@ -79,17 +79,11 @@ body {
   color: $white;
   border: 2px solid $white-dark;
   border-radius: 5px;
-  background: transparent;
   transition: color ease 0.3s, transform 0.3s;
 
   &:active {
     border-color: $white;
   }
-}
-
-.bg-img {
-  background-position: center;
-  background-size: cover;
 }
 
 h1 {
@@ -162,22 +156,21 @@ h2 {
   text-decoration: none;
 }
 
-.bg-free {
-  background-image: url("/src/assets/images/banners/bg-free.png");
+.bg-img {
   background-position: center;
   background-size: cover;
+}
+
+.bg-free {
+  background-image: url("/src/assets/images/banners/bg-free.png");
 }
 
 .bg-standart {
   background-image: url("/src/assets/images/banners/bg-standart.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .bg-premium {
   background-image: url("/src/assets/images/banners/bg-premium.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .bg-gradient {

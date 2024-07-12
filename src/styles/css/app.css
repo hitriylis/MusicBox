@@ -138,6 +138,10 @@ h6 {
   margin-top: 200px;
 }
 
+.mt-250 {
+  margin-top: 250px;
+}
+
 .mr-16 {
   margin-right: 16px;
 }
@@ -196,6 +200,10 @@ h6 {
 
 .mb-200 {
   margin-bottom: 200px;
+}
+
+.mb-223 {
+  margin-bottom: 223px;
 }
 
 .ml-25 {
@@ -350,6 +358,26 @@ h6 {
   color: #f89202;
 }
 
+.btn-green {
+  background-color: #34c176;
+}
+
+.btn-white {
+  background-color: #ffffff;
+}
+
+.btn-orange {
+  background-color: #f89202;
+}
+
+.btn-brown {
+  background-color: #95390c;
+}
+
+.btn-purple {
+  background-color: #5328a1;
+}
+
 .hover-green:hover {
   background-color: #34c176;
 }
@@ -364,6 +392,10 @@ h6 {
 
 .hover-brown:hover {
   background-color: #95390c;
+}
+
+.hover-purple:hover {
+  background-color: #5328a1;
 }
 
 * {
@@ -447,16 +479,10 @@ body {
   color: #ffffff;
   border: 2px solid #cacaca;
   border-radius: 5px;
-  background: transparent;
   transition: color ease 0.3s, transform 0.3s;
 }
 .btn:active {
   border-color: #ffffff;
-}
-
-.bg-img {
-  background-position: center;
-  background-size: cover;
 }
 
 h1 {
@@ -537,22 +563,21 @@ h2 {
   text-decoration: none;
 }
 
-.bg-free {
-  background-image: url("/src/assets/images/banners/bg-free.png");
+.bg-img {
   background-position: center;
   background-size: cover;
+}
+
+.bg-free {
+  background-image: url("/src/assets/images/banners/bg-free.png");
 }
 
 .bg-standart {
   background-image: url("/src/assets/images/banners/bg-standart.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .bg-premium {
   background-image: url("/src/assets/images/banners/bg-premium.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .bg-gradient {
@@ -806,6 +831,10 @@ h2 {
   background-image: url("/src/assets/images/banners/banner.png");
 }
 
+.bg-description-artist {
+  background-image: url("/src/assets/images/banners/morten-harket.png");
+}
+
 .description-container {
   flex-direction: column;
 }
@@ -850,6 +879,25 @@ h2 {
 
 .btn-form {
   font-family: Arial, sans-serif;
+  background-color: transparent;
+}
+
+.description-buttons {
+  gap: 1.5rem;
+}
+@media screen and (max-width: 682px) {
+  .description-buttons {
+    flex-direction: column;
+  }
+}
+
+.description-button {
+  width: 200px;
+  height: 62px;
+  padding: 20px 30px;
+  gap: 16px;
+  font-size: 12.8px;
+  border-color: #cacaca;
 }
 
 .pricing-cards {

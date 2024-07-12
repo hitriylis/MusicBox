@@ -2,6 +2,10 @@
   background-image: url("/src/assets/images/banners/banner.png");
 }
 
+.bg-description-artist {
+  background-image: url("/src/assets/images/banners/morten-harket.png");
+}
+
 .description-container {
   flex-direction: column;
 }
@@ -42,4 +46,22 @@
 
 .btn-form {
   font-family: $second-family;
+  background-color: transparent;
+}
+
+.description-buttons {
+  gap: 1.5rem;
+
+  @include media(custom, 682px) {
+    flex-direction: column;
+  }
+}
+
+.description-button {
+  width: 200px;
+  height: 62px;
+  padding: 20px 30px;
+  gap: 16px;
+  font-size: 12.8px;
+  border-color: $white-dark;
 }

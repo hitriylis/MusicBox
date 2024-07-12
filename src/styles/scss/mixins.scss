@@ -36,6 +36,7 @@ $margins-top: (
   "50": 50px,
   "62": 62px,
   "200": 200px,
+  "250": 250px,
 );
 
 @mixin mt($margins-top) {
@@ -77,6 +78,7 @@ $margins-bottom: (
   "65": 65px,
   "100": 100px,
   "200": 200px,
+  "223": 223px,
 );
 
 @mixin mb($margins-bottom) {
@@ -227,7 +229,18 @@ $colors: (
   "white": $white,
   "orange": $orange,
   "brown": $brown,
+  "purple": $purple,
 );
+
+@mixin btn($colors) {
+  @each $color-name, $color-value in $colors {
+    .btn-#{$color-name} {
+      background-color: $color-value;
+    }
+  }
+}
+
+@include btn($colors);
 
 @mixin hover($colors) {
   @each $color-name, $color-value in $colors {
