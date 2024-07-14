@@ -26,6 +26,7 @@
 .album-cover {
   width: 250px;
   height: 250px;
+  cursor: pointer;
 
   @include media(custom, 1182px) {
     width: 230px;
@@ -55,4 +56,5 @@
 
 .discography-info-title {
   font-weight: bold;
+  cursor: pointer;
 }

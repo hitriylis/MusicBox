@@ -1219,6 +1219,7 @@ h2 {
 .album-cover {
   width: 250px;
   height: 250px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1182px) {
   .album-cover {
@@ -1253,6 +1254,7 @@ h2 {
 
 .discography-info-title {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .similar-items {
