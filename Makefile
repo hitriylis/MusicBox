@@ -9,4 +9,4 @@ sass:
 	sass -w --no-source-map src/styles/scss/app.scss src/styles/css/app.css
 
 deploy:
-	npx surge ./src/
+	npx surge ./src/ --domain https://music_box.surge.sh

@@ -577,15 +577,15 @@ h2 {
 }
 
 .bg-free {
-  background-image: url("/src/assets/images/banners/bg-free.png");
+  background-image: url("../../../assets/images/banners/bg-free.png");
 }
 
 .bg-standart {
-  background-image: url("/src/assets/images/banners/bg-standart.png");
+  background-image: url("../../../assets/images/banners/bg-standart.png");
 }
 
 .bg-premium {
-  background-image: url("/src/assets/images/banners/bg-premium.png");
+  background-image: url("../../../assets/images/banners/bg-premium.png");
 }
 
 .bg-gradient {
@@ -836,11 +836,11 @@ h2 {
 }
 
 .bg-description {
-  background-image: url("/src/assets/images/banners/banner.png");
+  background-image: url("../../../assets/images/banners/banner.png");
 }
 
 .bg-description-artist {
-  background-image: url("/src/assets/images/banners/morten-harket.png");
+  background-image: url("../../../assets/images/banners/morten-harket.png");
 }
 
 .description-container {
