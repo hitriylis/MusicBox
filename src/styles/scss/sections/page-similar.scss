@@ -1,4 +1,4 @@
-.discography-albums {
+.similar-items {
   column-gap: 50px;
   row-gap: 25px;
 
@@ -11,48 +11,42 @@
   }
 }
 
-.discography-album {
+.similar-item {
+  max-width: 250px;
   min-width: 137px;
 
-  @include media(custom, 1024px) {
+  @include media(custom, 1180px) {
     grid-column: span 4;
   }
 
-  @include media(small) {
+  @include media(custom, 700px) {
     grid-column: span 6;
-  }
-}
-
-.album-cover {
-  width: 250px;
-  height: 250px;
-
-  @include media(custom, 1182px) {
-    width: 230px;
-    height: 230px;
   }
 
   @include media(custom, 890px) {
     width: 210px;
-    height: 210px;
   }
 
   @include media(custom, 594px) {
     width: 190px;
-    height: 190px;
   }
 
   @include media(custom, 480px) {
     width: 150px;
-    height: 150px;
   }
 
   @include media(mobile) {
     width: 137px;
-    height: 137px;
   }
 }
 
-.discography-info-title {
+.item-foto {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.similar-artist {
   font-weight: bold;
+  cursor: pointer;
 }

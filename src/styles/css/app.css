@@ -102,6 +102,10 @@ h6 {
   font-weight: 400;
 }
 
+.mt-1 {
+  margin-top: 1px;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -1215,7 +1219,6 @@ h2 {
 .album-cover {
   width: 250px;
   height: 250px;
-  cursor: pointer;
 }
 @media screen and (max-width: 1182px) {
   .album-cover {
@@ -1249,6 +1252,66 @@ h2 {
 }
 
 .discography-info-title {
+  font-weight: bold;
+}
+
+.similar-items {
+  column-gap: 50px;
+  row-gap: 25px;
+}
+@media screen and (max-width: 1024px) {
+  .similar-items {
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .similar-items {
+    column-gap: 10px;
+  }
+}
+
+.similar-item {
+  max-width: 250px;
+  min-width: 137px;
+}
+@media screen and (max-width: 1180px) {
+  .similar-item {
+    grid-column: span 4;
+  }
+}
+@media screen and (max-width: 700px) {
+  .similar-item {
+    grid-column: span 6;
+  }
+}
+@media screen and (max-width: 890px) {
+  .similar-item {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .similar-item {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .similar-item {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .similar-item {
+    width: 137px;
+  }
+}
+
+.item-foto {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.similar-artist {
   font-weight: bold;
   cursor: pointer;
 }
