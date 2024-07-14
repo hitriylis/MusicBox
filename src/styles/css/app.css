@@ -1182,3 +1182,73 @@ h2 {
 .track-info-data-title {
   font-weight: bold;
 }
+
+.discography-albums {
+  column-gap: 50px;
+  row-gap: 25px;
+}
+@media screen and (max-width: 1024px) {
+  .discography-albums {
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .discography-albums {
+    column-gap: 10px;
+  }
+}
+
+.discography-album {
+  min-width: 137px;
+}
+@media screen and (max-width: 1024px) {
+  .discography-album {
+    grid-column: span 4;
+  }
+}
+@media screen and (max-width: 768px) {
+  .discography-album {
+    grid-column: span 6;
+  }
+}
+
+.album-cover {
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1182px) {
+  .album-cover {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .album-cover {
+    width: 210px;
+    height: 210px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .album-cover {
+    width: 190px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .album-cover {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .album-cover {
+    width: 137px;
+    height: 137px;
+  }
+}
+
+.discography-info-title {
+  font-weight: bold;
+  cursor: pointer;
+}
