@@ -1,0 +1,48 @@
+.popular-tracks {
+  column-gap: 50px;
+  row-gap: 25px;
+
+  @include media(custom, 594px) {
+    column-gap: 0;
+  }
+}
+
+.track {
+  min-width: 225px;
+
+  @include media(custom, 594px) {
+    grid-column: span 12;
+  }
+}
+
+.track-cover {
+  position: relative;
+}
+
+.track-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &:active {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.cover-small {
+  width: 55px;
+  height: 55px;
+}
+
+.track-info {
+  width: 485px;
+}
+
+.track-info-data-title {
+  font-weight: bold;
+}

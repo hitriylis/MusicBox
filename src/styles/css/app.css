@@ -206,6 +206,10 @@ h6 {
   margin-bottom: 223px;
 }
 
+.ml-15 {
+  margin-left: 15px;
+}
+
 .ml-25 {
   margin-left: 25px;
 }
@@ -1127,4 +1131,54 @@ h2 {
   .app-image img {
     min-width: 225px;
   }
+}
+
+.popular-tracks {
+  column-gap: 50px;
+  row-gap: 25px;
+}
+@media screen and (max-width: 594px) {
+  .popular-tracks {
+    column-gap: 0;
+  }
+}
+
+.track {
+  min-width: 225px;
+}
+@media screen and (max-width: 594px) {
+  .track {
+    grid-column: span 12;
+  }
+}
+
+.track-cover {
+  position: relative;
+}
+
+.track-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.track-play:active {
+  width: 23px;
+  height: 23px;
+}
+
+.cover-small {
+  width: 55px;
+  height: 55px;
+}
+
+.track-info {
+  width: 485px;
+}
+
+.track-info-data-title {
+  font-weight: bold;
 }
