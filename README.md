@@ -20,4 +20,24 @@ make install
 make deploy
 ```
 
+## Demonstration:
+
+- Laptop size:
+
+  ![Laptop size](./src/assets/images/demonstration/laptop.jpg "Laptop size")
+
+---
+
+- Tablet size:
+
+  ![Tablet size](./src/assets/images/demonstration/tablet.jpg "Tablet size")
+
+---
+
+- Mobile size:
+
+  ![Mobile size](./src/assets/images/demonstration/mobile.jpg "Mobile size")
+
+---
+
 ### Click [here](https://music_box.surge.sh) to view in browser.
