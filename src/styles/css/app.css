@@ -106,6 +106,14 @@ h6 {
   margin-top: 1px;
 }
 
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -124,6 +132,10 @@ h6 {
 
 .mt-31 {
   margin-top: 31px;
+}
+
+.mt-32 {
+  margin-top: 32px;
 }
 
 .mt-40 {
@@ -170,12 +182,24 @@ h6 {
   margin-bottom: 24px;
 }
 
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mb-43 {
+  margin-bottom: 43px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
 }
 
 .mb-48 {
@@ -232,6 +256,10 @@ h6 {
 
 .pt-5 {
   padding-top: 5px;
+}
+
+.pt-24 {
+  padding-top: 24px;
 }
 
 .pt-100 {
@@ -367,7 +395,7 @@ h6 {
 }
 
 .btn-green {
-  background-color: #34c176;
+  background-color: #3cc27b;
 }
 
 .btn-white {
@@ -379,15 +407,27 @@ h6 {
 }
 
 .btn-brown {
-  background-color: #95390c;
+  background-color: #aa4817;
 }
 
 .btn-purple {
   background-color: #5328a1;
 }
 
+.btn-green-bright {
+  background-color: #00b755;
+}
+
+.btn-brown-bright {
+  background-color: #953200;
+}
+
+.btn-purple-bright {
+  background-color: #3d118e;
+}
+
 .hover-green:hover {
-  background-color: #34c176;
+  background-color: #3cc27b;
 }
 
 .hover-white:hover {
@@ -399,11 +439,23 @@ h6 {
 }
 
 .hover-brown:hover {
-  background-color: #95390c;
+  background-color: #aa4817;
 }
 
 .hover-purple:hover {
   background-color: #5328a1;
+}
+
+.hover-green-bright:hover {
+  background-color: #00b755;
+}
+
+.hover-brown-bright:hover {
+  background-color: #953200;
+}
+
+.hover-purple-bright:hover {
+  background-color: #3d118e;
 }
 
 * {
@@ -483,7 +535,7 @@ body {
   width: 100%;
   height: 57px;
   display: block;
-  padding: 20px 30px;
+  padding: 21px 30px;
   color: #ffffff;
   border: 2px solid #cacaca;
   border-radius: 5px;
@@ -887,7 +939,6 @@ h2 {
 
 .btn-form {
   font-family: Arial, sans-serif;
-  background-color: transparent;
 }
 
 .description-buttons {
@@ -1025,7 +1076,6 @@ h2 {
 }
 .news-body h3 {
   height: 45px;
-  margin-top: 5px;
   font-size: 30px;
 }
 @media screen and (max-width: 1112px) {
@@ -1051,7 +1101,8 @@ h2 {
 }
 
 .news-author {
-  height: 19px;
+  height: 20px;
+  width: 186px;
   gap: 16px;
 }
 @media screen and (max-width: 1112px) {
