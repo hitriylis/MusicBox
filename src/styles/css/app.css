@@ -1,17 +1,17 @@
 @font-face {
   font-weight: 400;
   font-family: Roboto;
-  src: url("../../../assets/fonts/Roboto-Regular.ttf");
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-weight: 500;
   font-family: Roboto;
-  src: url("../../../assets/fonts/Roboto-Medium.ttf");
+  src: url("../../assets/fonts/Roboto-Medium.ttf");
 }
 @font-face {
   font-weight: 700;
   font-family: Roboto;
-  src: url("../../../assets/fonts/Roboto-Bold.ttf");
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
 }
 * {
   padding: 0;
@@ -577,15 +577,15 @@ h2 {
 }
 
 .bg-free {
-  background-image: url("../../../assets/images/banners/bg-free.png");
+  background-image: url("../../assets/images/banners/bg-free.png");
 }
 
 .bg-standart {
-  background-image: url("../../../assets/images/banners/bg-standart.png");
+  background-image: url("../../assets/images/banners/bg-standart.png");
 }
 
 .bg-premium {
-  background-image: url("../../../assets/images/banners/bg-premium.png");
+  background-image: url("../../assets/images/banners/bg-premium.png");
 }
 
 .bg-gradient {
@@ -836,11 +836,11 @@ h2 {
 }
 
 .bg-description {
-  background-image: url("../../../assets/images/banners/banner.png");
+  background-image: url("../../assets/images/banners/banner.png");
 }
 
 .bg-description-artist {
-  background-image: url("../../../assets/images/banners/morten-harket.png");
+  background-image: url("../../assets/images/banners/morten-harket.png");
 }
 
 .description-container {
