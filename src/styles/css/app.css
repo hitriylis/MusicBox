@@ -891,14 +891,6 @@ h2 {
   background-image: url("../../assets/images/banners/banner.png");
 }
 
-.bg-description-artist {
-  background-image: url("../../assets/images/banners/morten-harket.png");
-}
-
-.description-container {
-  flex-direction: column;
-}
-
 @media screen and (max-width: 682px) {
   .description-title {
     margin-top: 218px;
@@ -956,7 +948,6 @@ h2 {
   padding: 20px 30px;
   gap: 16px;
   font-size: 12.8px;
-  border-color: #cacaca;
 }
 
 .pricing-cards {
@@ -1186,6 +1177,38 @@ h2 {
   .app-image img {
     min-width: 225px;
   }
+}
+
+.bg-artist {
+  background-image: url("../../assets/images/banners/morten-harket.png");
+}
+
+@media screen and (max-width: 682px) {
+  .artist-title {
+    margin-top: 218px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .artist-title {
+    margin-top: 225px;
+  }
+}
+
+.artist-buttons {
+  gap: 1.5rem;
+}
+@media screen and (max-width: 682px) {
+  .artist-buttons {
+    flex-direction: column;
+  }
+}
+
+.artist-button {
+  width: 200px;
+  height: 62px;
+  padding: 20px 30px;
+  gap: 16px;
+  font-size: 12.8px;
 }
 
 .popular-tracks {
