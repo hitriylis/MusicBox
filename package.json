@@ -1,21 +1,21 @@
 {
   "name": "layout-designer-project-56",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/hitriylis/layout-designer-project-56/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/hitriylis/layout-designer-project-56/actions)",
+  "description": "[![Actions Status](https://github.com/hitriylis/https://github.com/hitriylis/MusicBox/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/hitriylis/layout-designer-project-56/actions)",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hitriylis/layout-designer-project-56.git"
+    "url": "git+https://github.com/hitriylis/https://github.com/hitriylis/MusicBox.git"
   },
   "author": "Andrei Lugovov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hitriylis/layout-designer-project-56/issues"
+    "url": "https://github.com/hitriylis/https://github.com/hitriylis/MusicBox/issues"
   },
-  "homepage": "https://github.com/hitriylis/layout-designer-project-56#readme",
+  "homepage": "https://github.com/hitriylis/https://github.com/hitriylis/MusicBox#readme",
   "devDependencies": {
     "htmlhint": "^1.1.4",
     "stylelint": "^15.2.0",
