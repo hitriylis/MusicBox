@@ -1,0 +1,267 @@
+// ---------- media ----------
+@use "sass:map";
+
+$breakpoints: (
+  breakpoint-mobile: 426px,
+  breakpoint-small: 768px,
+  // container = 720px
+  breakpoint-medium: 992px,
+  // container = 960px
+  breakpoint-large: 1240px,
+  // container = 1200px
+);
+
+@mixin media($size: "small", $value: null) {
+  @if $size == "custom" {
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: map.get($breakpoints, breakpoint-#{$size})) {
+      @content;
+    }
+  }
+}
+
+@include media($size: "small", $value: null);
+
+// ---------- margins ----------
+$margins-top: (
+  "1": 1px,
+  "5": 5px,
+  "10": 10px,
+  "16": 16px,
+  "17": 17px,
+  "24": 24px,
+  "30": 30px,
+  "31": 31px,
+  "32": 32px,
+  "40": 40px,
+  "50": 50px,
+  "62": 62px,
+  "200": 200px,
+  "250": 250px,
+);
+
+@mixin mt($margins-top) {
+  @each $margin-name, $margin-value in $margins-top {
+    .mt-#{$margin-name} {
+      margin-top: $margin-value;
+    }
+  }
+}
+
+@include mt($margins-top);
+
+$margins-right: (
+  "16": 16px,
+  "123": 123px,
+);
+
+@mixin mr($margins-right) {
+  @each $margin-name, $margin-value in $margins-right {
+    .mr-#{$margin-name} {
+      margin-right: $margin-value;
+    }
+  }
+}
+
+@include mr($margins-right);
+
+$margins-bottom: (
+  "17": 17px,
+  "18": 18px,
+  "20": 20px,
+  "24": 24px,
+  "25": 25px,
+  "30": 30px,
+  "40": 40px,
+  "43": 43px,
+  "45": 45px,
+  "48": 48px,
+  "49": 49px,
+  "50": 50px,
+  "64": 64px,
+  "65": 65px,
+  "100": 100px,
+  "200": 200px,
+  "223": 223px,
+);
+
+@mixin mb($margins-bottom) {
+  @each $margin-name, $margin-value in $margins-bottom {
+    .mb-#{$margin-name} {
+      margin-bottom: $margin-value;
+    }
+  }
+}
+
+@include mb($margins-bottom);
+
+$margins-left: (
+  "15": 15px,
+  "25": 25px,
+  "90": 90px,
+  "144": 144px,
+  "451": 451px,
+);
+
+@mixin ml($margins-left) {
+  @each $margin-name, $margin-value in $margins-left {
+    .ml-#{$margin-name} {
+      margin-left: $margin-value;
+    }
+  }
+}
+
+@include ml($margins-left);
+
+// ---------- paddings ----------
+$paddings-top: (
+  "5": 5px,
+  "24": 24px,
+  "100": 100px,
+  "200": 200px,
+);
+
+@mixin pt($paddings-top) {
+  @each $padding-name, $padding-value in $paddings-top {
+    .pt-#{$padding-name} {
+      padding-top: $padding-value;
+    }
+  }
+}
+
+@include pt($paddings-top);
+
+$paddings-bottom: (
+  "5": 5px,
+  "200": 200px,
+);
+
+@mixin pb($paddings-bottom) {
+  @each $padding-name, $padding-value in $paddings-bottom {
+    .pb-#{$padding-name} {
+      padding-bottom: $padding-value;
+    }
+  }
+}
+
+@include pb($paddings-bottom);
+
+$paddings-left: (
+  "10": 10px,
+  "20": 20px,
+);
+
+@mixin pl($paddings-left) {
+  @each $padding-name, $padding-value in $paddings-left {
+    .pl-#{$padding-name} {
+      padding-left: $padding-value;
+    }
+  }
+}
+
+@include pl($paddings-left);
+
+// ---------- grid ----------
+$columns: (
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "6": 6,
+  "7": 7,
+  "8": 8,
+  "9": 9,
+  "10": 10,
+  "11": 11,
+  "12": 12,
+);
+
+@mixin col($columns) {
+  @each $column-name, $column-value in $columns {
+    .col-#{$column-name} {
+      grid-column: span $column-value;
+    }
+  }
+}
+
+@include col($columns);
+
+// ---------- text ----------
+$sizes: (
+  "size-11": 11px,
+  "size-12": 12px,
+  "size-13": 13px,
+  "size-16": 16px,
+  "size-18": 18px,
+  "size-24": 24px,
+  "size-32": 32px,
+  "size-40": 40px,
+  "size-48": 48px,
+  "size-56": 56px,
+  "size-64": 64px,
+);
+
+@mixin text($sizes) {
+  @each $size-name, $size-value in $sizes {
+    .text-#{$size-name} {
+      font-size: $size-value;
+    }
+  }
+}
+
+@include text($sizes);
+
+$colors: (
+  "white": $white,
+  "white-dark": $white-dark,
+  "gray-dark": $gray-dark,
+  "orange": $orange,
+);
+
+@mixin text($colors) {
+  @each $color-name, $color-value in $colors {
+    .text-#{$color-name} {
+      color: $color-value;
+    }
+  }
+}
+
+@include text($colors);
+
+// ---------- buttons ----------
+$colors: (
+  "green": $green,
+  "white": $white,
+  "orange": $orange,
+  "brown": $brown,
+  "purple": $purple,
+  "green-bright": $green-bright,
+  "brown-bright": $brown-bright,
+  "purple-bright": $purple-bright,
+);
+
+@mixin btn($colors) {
+  @each $color-name, $color-value in $colors {
+    .btn-#{$color-name} {
+      background-color: $color-value;
+    }
+  }
+}
+
+@include btn($colors);
+
+@mixin hover($colors) {
+  @each $color-name, $color-value in $colors {
+    .hover-#{$color-name} {
+      &:hover {
+        background-color: $color-value;
+      }
+    }
+  }
+}
+
+@include hover($colors);

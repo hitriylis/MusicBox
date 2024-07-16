@@ -1,9 +1,5 @@
 # Music Box
 
-### Hexlet tests and linter status:
-
-[![Actions Status](https://github.com/hitriylis/MusicBox/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/hitriylis/layout-designer-project-56/actions)
-
 ## Description
 
 Music Box - is a project to create two landings for the music portal “Music Box”. The portal provides access to online listening to music. The project uses the following approaches: positioning, adaptivity, Flex, Grid, SASS, OOCSS and Atomic CSS, deployment in Surge.

@@ -1,10 +1,8 @@
 {
   "name": "layout-designer-project-56",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/hitriylis/MusicBox/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/hitriylis/layout-designer-project-56/actions)",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

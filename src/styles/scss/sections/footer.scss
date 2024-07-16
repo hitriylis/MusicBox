@@ -1,0 +1,64 @@
+.footer-menu {
+  margin: 3rem 0;
+  @include media(custom, 880px) {
+    gap: 30px;
+  }
+}
+
+.footer-menu-col {
+  min-width: 200px;
+
+  @include media(custom, 880px) {
+    grid-column: span 6;
+  }
+
+  @include media(custom, 568px) {
+    grid-column: span 12;
+  }
+}
+
+.icons {
+  gap: 24px;
+}
+
+.icons-icon {
+  height: 17px;
+  width: auto;
+}
+
+.footer-menu-item {
+  line-height: 150%;
+}
+
+.footer-menu-link {
+  &:hover {
+    color: $white;
+  }
+}
+
+.footer-border {
+  width: 100vw;
+  border: 2px solid $white-dark;
+
+  @include media(custom, 568px) {
+    border: 1px solid $white-dark;
+  }
+}
+
+.footer-low-menu {
+  margin: 2rem 0;
+}
+
+.footer-low-menu-list {
+  gap: 16px;
+
+  @include media(custom, 568px) {
+    flex-direction: column;
+  }
+}
+
+.footer-low-menu-link {
+  &:hover {
+    color: $white;
+  }
+}
